@@ -10,6 +10,7 @@ state={
 article_info : [
   { id: 0, name: 'Adidas Stan Smith', prix: '95 €', img: 'https://images-na.ssl-images-amazon.com/images/I/71vos9AHtoL._AC_UX500_.jpg' },
   { id: 1, name: 'Nike Air Jordan One', prix: '150 €', img: 'https://media.gqmagazine.fr/photos/5b9925ba21de720011929029/master/w_828%2cc_limit/nike___air_jordan_one_3496.jpg' },
+  { id: 2, name: 'Nike Air Max', prix: '120 €', img: 'https://media.gqmagazine.fr/photos/5b9925bb21de72001192902b/master/w_828%2cc_limit/nike___air_max_5553.jpg' },
 ],
 
 utilisateur_paniers : [
@@ -128,6 +129,19 @@ add_panier = id =>{
     <h3>{articles_name[1]}</h3>
     <div class="price">
       <s>{articles_prix[1]}</s>
+    </div>
+   {this.props.isLogged?   <a href="#" class="add-to-cart" onClick={()=>this.add_article()}>Add to Cart</a>: <h4>Connectez vous pour ajouter un article</h4>}
+  </figcaption>
+</figure>
+
+      <figure class="snip1249">
+  <div class="image">
+    <img src={articles_img[2]} alt="sample90"/><i class="ion-ios-basketball-outline"></i>
+  </div>
+  <figcaption>
+    <h3>{articles_name[2]}</h3>
+    <div class="price">
+      <s>{articles_prix[2]}</s>
     </div>
    {this.props.isLogged?   <a href="#" class="add-to-cart" onClick={()=>this.add_article()}>Add to Cart</a>: <h4>Connectez vous pour ajouter un article</h4>}
   </figcaption>
