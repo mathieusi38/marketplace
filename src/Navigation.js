@@ -56,7 +56,7 @@ tologoutSubmit=(event)=>{
         <li> <Link to="/signin">SignIn</Link>  </li>
         <li> <Link to="/signup">SignUp</Link>  </li>
         {this.props.isLogged?  <li> <Link to=""> <img class="img_achat" src={img_achat}/> {this.props.nbr_achat}</Link> </li>: ""}
-        {this.props.isLogged?  <li> {this.props.email} </li>: ""}
+        {this.props.isLogged?  <li> <Link to=""> Votre adresse mail : {this.props.email}</Link> </li>: ""}
        {this.props.isLogged?  <li> <Link to="" onClick={this.tologoutSubmit}>Je me déconnecte</Link> </li>: ""}
        {this.props.isLogged?  <li> <Link to=""> Connecté </Link> </li>: ""}
   </ul>

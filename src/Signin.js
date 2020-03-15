@@ -37,7 +37,7 @@ handleSubmit=(event)=>{
 
   <input type="text" name="email" placeholder="Email" onChange={this.handleInput}/>
   <input type="text" name="password" placeholder="Password" onChange={this.handleInput}/>
-  <input type="submit" name="email" value="Je me connecte"/>
+  <input class="sub" type="submit" name="email" value="Je me connecte"/>
      
 
 </form>
